@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#Python 2.7
+# Python 3
 
 import os
 import os.path as path
@@ -26,6 +26,7 @@ ModoDeUso = """\n   Modo De Uso:\n\n\t\t SorText.py [-d][Nombre.ext] | [-v] | [-
 def Ordenar(X):
 
 	if not path.exists(X):
+		
 		print("\n\n\t\t [!] No Existe El Archivo: "+X)
 		os.system('Timeout /nobreak 03 > Nul')
 	
@@ -35,11 +36,30 @@ def Ordenar(X):
 		print(FechaI)
 
 		print("\n\n\t [*] Ordenando Palabras...")
+		
+		#~ En Python 3
+		
+		Archivo = open(X,"r")
+		ListA = []
+		
+		for linea in Archivo:
+			ListA.append(linea)
+			
+		ListA = sorted(ListA)
 
-		lista_palabras=sorted(file(X), key=str.lower)
-		file(X[:-4]+"-Ordenado.txt","w").writelines(lista_palabras)
+		Archivo2 = open(X[:-4]+"-Ord.zion","w")
+		
+		for dato in ListA:
+			Archivo2.write(dato)
+		
+		Archivo.close()
+		Archivo2.close()
 
-		print("\n\n    [+] Ordenado Y Guardado En El Archivo: "+X[:-4]+"-Ordenado.txt")
+		#~ En Python 2
+		#~ lista_palabras=sorted(file(X), key=str.lower)
+		#~ file(X[:-4]+"-Ordenado.txt","w").writelines(lista_palabras)
+
+		print("\n\n    [+] Ordenado Y Guardado En El Archivo: "+X[:-4]+"-Ord.zion")
 
 		FechaF = time.strftime("\n\n\t [!] Finalizado: %d/%m/%Y %H:%M:%S")
 		print(FechaF)
@@ -62,8 +82,8 @@ def main():
 			exit(0)
 			
 		elif sys.argv[1] == "-a" or sys.argv[1] == "--all":
-			print("\n\n{:^80}\n{:^80}\n{:^80}".format("SorText",Autor[4:],Version[1:]))			
-			NombA=raw_input("\n\n [+] Nombre De Archivo A Ordenar [Con Extension]: ")
+			print("\n\n{:^80}\n{:^80}\n{:^80}".format("SorText",Autor[4:],Version[1:]))
+			NombA=input("\n\n [+] Nombre De Archivo A Ordenar [Con Extension]: ")
 			Ordenar(NombA)
 		
 		elif sys.argv[1] == "-d":
@@ -89,7 +109,7 @@ def main():
 		
 	else:
 		print(banner)
-		NombA=raw_input("\n\n [+] Nombre De Archivo A Ordenar [Con Extension]: ")
+		NombA=input("\n\n [+] Nombre De Archivo A Ordenar [Con Extension]: ")
 		Ordenar(NombA)
 
 main()
