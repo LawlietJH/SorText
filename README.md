@@ -8,22 +8,22 @@
 
 __Modo De Uso: `SorText.py [-d][Nombre.ext] | [-v] | [-a] | [-h]`__
 
-+ Para ver la Versión, la Lista de Servicios de Correos y correr el Script, se debe añadir el argumento [-a] | [--all]
++ Para ver la __Versión__, y correr el _Script_, se debe añadir el _argumento_ __[-a] | [--all]__
 
  + __`SorText.py -a`__
 
-+ Para usar un diccionario, se puede añadir el argumento [-d] En Consola.
++ Para usar un __diccionario__, se puede añadir el _argumento_ __[-d]__ En Consola.
 
  + __`SorText.py -d`__
 
-+ Para ver el Modo De Uso, se debe añadir el argumento [-h] | [--help] En Consola.
++ Para ver el __Modo De Uso__, se debe añadir el _argumento_ __[-h] | [--help]__ En Consola.
 
  + __`SorText.py -h`__
  
-+ Para ver la Lista de Servicios de Correo soportados, se debe añadir el argumento [-v] | [--version] En Consola.
++ Para ver la __Versión__ del _Script_, se debe añadir el _argumento_ __[-v] | [--version]__ En Consola.
 
  + __`SorText.py -v`__
 
-+ O simplemente ejecuta el Script sin ningun argumento.
++ O simplemente ejecuta el _Script_ sin ningun _argumento_.
 
  + __`SorText.py`__
