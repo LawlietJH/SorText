@@ -22,6 +22,17 @@ ModoDeUso = """\n   Modo De Uso:\n\n\t\t SorText.py [-d Diccionario.ext] | [-v] 
 \n\t -v, --version \t\t Muestra la versión y autor del Script.
 """
 
+BST = r"""
+                         __   __   __  ___  ___     ___ 
+                        /__` /  \ |__)  |  |__  \_/  |  
+                        .__/ \__/ |  \  |  |___ / \  |  
+"""
+
+BA = r"""
+                            ╦  ┌─┐┬ ┬┬  ┬┌─┐┌┬┐╦╦ ╦
+                            ║  ├─┤││││  │├┤  │ ║╠═╣
+                            ╩═╝┴ ┴└┴┘┴─┘┴└─┘ ┴╚╝╩ ╩
+"""
 
 def Ordenar(X):
 
@@ -78,11 +89,11 @@ def main():
 			exit(0)
 			
 		elif sys.argv[1] == "-v" or sys.argv[1] == "--version":
-			print("\n\n{:^80}\n{:^80}\n{:^80}".format("SorText",Autor[4:],Version[1:]))
+			print("\n\n{:^80}\n{:^80}\n{:^80}".format(BST,BA,Version[1:]))
 			exit(0)
 			
 		elif sys.argv[1] == "-a" or sys.argv[1] == "--all":
-			print("\n\n{:^80}\n{:^80}\n{:^80}".format("SorText",Autor[4:],Version[1:]))
+			print("\n\n{:^80}\n{:^80}\n{:^80}".format(BST,BA,Version[1:]))
 			NombA=input("\n\n [+] Nombre De Archivo A Ordenar [Con Extension]: ")
 			Ordenar(NombA)
 		
