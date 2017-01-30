@@ -116,9 +116,35 @@ Banner8 = """
                                                                           
                                                           By: LawlietJH
 """
+#(Font: 'Lean' - Desde: Página 1)
+
+
+Banner9 = r"""
+                                                         
+                          ____         _____           _ 
+                         |___ \___ __ |_   ______  ___| |
+                         / ___/ _ |__` || |/ _ \ \/ |__ |
+                        | (__| (_) | | || |\__  >  < _| |
+                         \____\___/  |_||_||___/_/\_|__/ 
+                                                         
+                                                          By: LawlietJH
+"""
+#(Font: 'Mirror' - Desde: Página 1)
+
+Banner10 = r"""
+                                                             
+                      ______          _______                
+                     / _____)        (_______)           _   
+                    ( (____   ___   ____ _ _____ _   _ _| |_ 
+                     \____ \ / _ \ / ___) | ___ ( \ / |_   _)
+                     _____) ) |_| | |   | | ____|) X (  | |_ 
+                    (______/ \___/|_|   |_|_____|_/ \_)  \__)
+                                                             
+                                                          By: LawlietJH
+"""
 
 def Banner():
     Banners = [ Banner1, Banner2, Banner3, Banner4, Banner5,\
-		 Banner6, Banner7, Banner8]#~ , Banner9, Banner10,\
+		 Banner6, Banner7, Banner8, Banner9, Banner10 ] #~ ,\
 		 #~ Banner11, Banner12 ]
     return random.choice(Banners)
