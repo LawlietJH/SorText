@@ -6,7 +6,7 @@
 
 - - -
 
-__Modo De Uso: `SorText.py [-d][Nombre.ext] | [-v] | [-a] | [-h]`__
+__Modo De Uso: `SorText.py [-d Diccionario.ext] | [-v] | [-a] | [-h]`__
 
 + Para ver la __Versión__, y correr el _Script_, se debe añadir el _argumento_ __[-a] | [--all]__
 
