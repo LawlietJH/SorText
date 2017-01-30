@@ -93,7 +93,32 @@ Banner6 = """
 #(Font: 'Georgia11' - Desde: Página 1)
 
 
+Banner7 = r"""
+                                                           
+                         ____            _____         _   
+                        / ___|  ___  _ _|_   _|____  _| |_ 
+                        \___ \ / _ \| '__|| |/ _ \ \/ / __|
+                         ___) | (_) | |   | |  __/>  <| |_ 
+                        |____/ \___/|_|   |_|\___/_/\_\\__|
+                                                           
+                                                          By: LawlietJH
+"""
+#(Font: 'Ivrit' - Desde: Página 1)
+
+
+Banner8 = """
+                                                                              
+          _/_/_/                      _/_/_/_/_/                      _/      
+       _/          _/_/    _/  _/_/      _/      _/_/    _/    _/  _/_/_/_/   
+        _/_/    _/    _/  _/_/          _/    _/_/_/_/    _/_/      _/        
+           _/  _/    _/  _/            _/    _/        _/    _/    _/         
+    _/_/_/      _/_/    _/            _/      _/_/_/  _/    _/      _/_/      
+                                                                          
+                                                          By: LawlietJH
+"""
+
 def Banner():
     Banners = [ Banner1, Banner2, Banner3, Banner4, Banner5,\
-		 Banner6 ]
+		 Banner6, Banner7, Banner8]#~ , Banner9, Banner10,\
+		 #~ Banner11, Banner12 ]
     return random.choice(Banners)
