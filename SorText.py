@@ -10,14 +10,14 @@ from BannerST import Banner
 os.system("cls")
 
 Autor = "By: LawlietJH"
-Version = "v1.0.0"
+Version = "v1.0.2"
 
 #EMCrk - Banner Random
 banner = str(Banner()+"{:>71}".format(Version)+"\n\n{:^80}".format("[-] Ordena tus Diccionaros Alfabeticamente para Ataques por Fuerza Bruta [-]"))
 
-ModoDeUso = """\n   Modo De Uso:\n\n\t\t SorText.py [-d][Nombre.ext] | [-v] | [-a] | [-h]
+ModoDeUso = """\n   Modo De Uso:\n\n\t\t SorText.py [-d Diccionario.ext] | [-v] | [-a] | [-h]
 \n\n\t -a, --all \t\t Muestra todos los datos juntos y continua\n\t\t\t\t con la ejecución normal del Script.
-\n\t -d, Nombre.ext \t\t Se coloca el nombre del diccionario a\n\t\t\t\t  utilizar añadiendo su extensión.
+\n\t -d, --diccionario \t Se coloca el nombre del diccionario a\n\t\t\t\t utilizar añadiendo su extensión.
 \n\t -h, --help \t\t Muestra el Modo De Uso.
 \n\t -v, --version \t\t Muestra la versión y autor del Script.
 """
@@ -86,7 +86,7 @@ def main():
 			NombA=input("\n\n [+] Nombre De Archivo A Ordenar [Con Extension]: ")
 			Ordenar(NombA)
 		
-		elif sys.argv[1] == "-d":
+		elif sys.argv[1] == "-d" or sys.argv[1] == "--diccionario":
 			print("\n\n\t Añade el nombre del diccionario.\n\n\t\t ejemplo: SorText.py -d Nomb_Dic.zion")
 			
 		elif not sys.argv[1] == "-a" and not sys.argv[1] == "--all"\
@@ -96,7 +96,7 @@ def main():
 			
 	elif len(sys.argv) == 3:
 			
-		if sys.argv[1] == "-d":
+		if sys.argv[1] == "-d" or sys.argv[1] == "--diccionario":
 			NombA = sys.argv[2]
 			print(banner)
 			Ordenar(NombA)
