@@ -80,7 +80,7 @@ def Ordenar(X):
 		FechaF = time.strftime("\n\n\t [!] Finalizado: %d/%m/%Y %H:%M:%S")
 		print(FechaF)
 
-		os.system("Timeout /nobreak 03 > Nul")	#~ Pausa de 3 segundos, en este tiempo, la ventana no respondera a ninguna tecla.
+		os.system("Timeout /nobreak 03 > Nul")	#~ Pausa de 3 segundos, en este tiempo, la ventana no respondera a ninguna acción.
 
 
 def main():
@@ -105,10 +105,10 @@ def main():
 		elif sys.argv[1] == "-d" or sys.argv[1] == "--diccionario":
 			print("\n\n\t Añade el nombre del diccionario.\n\n\t\t ejemplo: SorText.py -d Nomb_Dic.zion")
 			
-		elif not sys.argv[1] == "-a" and not sys.argv[1] == "--all"\		#~ Si se agrego un argumento y no es ninguno de estos
-		and not sys.argv[1] == "-h" and not sys.argv[1] == "--help"\		#~ Mostrara el Modo De Uso.
+		elif not sys.argv[1] == "-a" and not sys.argv[1] == "--all"\
+		and not sys.argv[1] == "-h" and not sys.argv[1] == "--help"\
 		and not sys.argv[1] == "-v" and not sys.argv[1] == "--version":
-			print(ModoDeUso)
+			print(ModoDeUso)	#~ Si se agregó un argumento y no es ninguno de estos, Mostrará el Modo De Uso.
 			
 	elif len(sys.argv) == 3:
 			
