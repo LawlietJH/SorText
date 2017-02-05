@@ -169,7 +169,7 @@ Banner12 = r"""
                                                                                
                                                           By: LawlietJH
 """
-#(Font: '' - Desde: Página 1)
+#(Font: 'Merlin' - Desde: Página 1)
 
 
 def Banner():
