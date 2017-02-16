@@ -10,7 +10,7 @@ from BannerST import Banner
 os.system("cls")
 
 Autor = "By: LawlietJH"
-Version = "v1.0.2"
+Version = "v1.0.3"
 
 #~ EMCrk - Banner Random
 banner = str(Banner()+"{:>71}".format(Version)+"\n\n{:^80}".format("[-] Ordena tus Diccionaros Alfabéticamente para Ataques por Fuerza Bruta [-]"))
@@ -61,7 +61,7 @@ def Ordenar(X):
 		for linea in Archivo:
 			ListA.append(linea)	#~ Se añade cada palabra del archivo a la lista .
 			
-		ListA = sorted(ListA)	#~ Se ordena la Lista.
+		ListA = sorted(ListA, key=str.lower)	#~ Se ordena la Lista.
 
 		Archivo2 = open(X[:-4]+"-Ord.zion","w")		#~ Se Crea un nuevo archivo.
 		
