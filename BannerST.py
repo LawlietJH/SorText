@@ -78,7 +78,7 @@ Banner5 = r"""
 #(Font: 'Double' - Desde: Página 1)
 
 
-Banner6 = """                                                                     
+Banner6 = r"""                                                                     
                                                                      
               .M\"""bgd             MMP""MM""YMM                 mm   
              ,MI    "Y             P'   MM   `7                 MM   

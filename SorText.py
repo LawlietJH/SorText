@@ -12,7 +12,7 @@ os.system("cls")
 Autor = "By: LawlietJH"
 Version = "v1.0.3"
 
-#~ EMCrk - Banner Random
+#~ SorText - Banner Random
 banner = str(Banner()+"{:>71}".format(Version)+"\n\n{:^80}".format("[-] Ordena tus Diccionaros Alfabéticamente para Ataques por Fuerza Bruta [-]"))
 
 ModoDeUso = """\n   Modo De Uso:\n\n\t\t SorText.py [-d Diccionario.ext] | [-v] | [-a] | [-h]
@@ -63,7 +63,7 @@ def Ordenar(X):
 			
 		ListA = sorted(ListA, key=str.lower)	#~ Se ordena la Lista.
 
-		Archivo2 = open(X[:-4]+"-Ord.zion","w")		#~ Se Crea un nuevo archivo.
+		Archivo2 = open(X[:-4]+"-Ord.ZioN","w")		#~ Se Crea un nuevo archivo.
 		
 		for dato in ListA:
 			Archivo2.write(dato)	#~ Se Guardan las palabras de la lista ordenada al nuevo archivo.
@@ -75,7 +75,7 @@ def Ordenar(X):
 		#~ lista_palabras=sorted(file(X), key=str.lower)
 		#~ file(X[:-4]+"-Ordenado.txt","w").writelines(lista_palabras)
 
-		print("\n\n    [+] Ordenado Y Guardado En El Archivo: "+X[:-4]+"-Ord.zion")
+		print("\n\n    [+] Ordenado Y Guardado En El Archivo: "+X[:-4]+"-Ord.ZioN")
 
 		FechaF = time.strftime("\n\n\t [!] Finalizado: %d/%m/%Y %H:%M:%S")
 		print(FechaF)
@@ -103,7 +103,7 @@ def main():
 			Ordenar(NombA)
 		
 		elif sys.argv[1] == "-d" or sys.argv[1] == "--diccionario":
-			print("\n\n\t Añade el nombre del diccionario.\n\n\t\t ejemplo: SorText.py -d Nomb_Dic.zion")
+			print("\n\n\t Añade el nombre del diccionario.\n\n\t\t ejemplo: SorText.py -d Nomb_Dic.ZioN")
 			
 		elif not sys.argv[1] == "-a" and not sys.argv[1] == "--all"\
 		and not sys.argv[1] == "-h" and not sys.argv[1] == "--help"\
